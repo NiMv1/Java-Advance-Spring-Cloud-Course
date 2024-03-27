@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false # чтобы наш сервер Eureka не зарегистрировался сам с собой, мы установили свойство.
+    fetch-registry: false # чтобы клиент не получал информацию реестра от Eureka Server
